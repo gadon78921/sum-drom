@@ -73,6 +73,6 @@ if ($argc === 1) {
 
 $paths = getDirsFromArgv($argv);
 validateDirs($paths);
-$totalSum = iterateDirsAndCalculateSum($paths);
+$totalSum = iterateDirsAndCalculateSum(array_unique($paths));
 
 echo $totalSum . "\n";
